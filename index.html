@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Samuel Vieira</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <img src="imagens/logo.png" alt="">
+    </div>
+    
+    <div id="menu">
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="#descer_sobre_mim">Sobre</a></li>
+          <li><a href="#selecionar_tipo">Habilidades</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav> 
+    </div>
+
+    <div id="links">
+      <a href="#">Home</a>
+      <a href="#descer_sobre_mim">Sobre</a>
+      <a href="#selecionar_tipo">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </div>
+
+    <div class="menu-bg" id="menu-bg"></div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-content">
+        <div class="nome">DEV EM FORMAÇÃO</div>
+        <div class="slogan">Samuel, <span id="cor_slogan">Estudante de Desenvolvimento de Sistemas</span> da Etec</div>
+        
+        <div id="skills">
+          Skills: <span id="texto-dinamico"></span>
+        </div>
+        
+        <div class="breve_explicacao">
+          Desenvolvedor em formação, com conhecimento em Python e frontend. Possuo boas competências para trabalho em equipe e, atualmente, estou em busca de uma oportunidade na área para adquirir experiência e evoluir profissionalmente.
+        </div>
+
+        <div id="link_projetos_e_contato">
+          <div class="card"><a href="#selecionar_tipo">Projetos</a></div>
+          <div class="card"><a href="#contato">Contato</a></div>
+        </div>
+      </div>
+      
+      <div class="hero-image">
+        <div id="img_samuel">
+          <img src="imagens/SamuelVieira.jpeg" alt="">
+        </div>
+        
+        <div class="text-badge html">HTML5</div>
+        <div class="text-badge css">CSS3</div>
+        <div class="text-badge js">JavaScript</div>
+        <div class="text-badge python">Python</div>
+        <div class="text-badge bootstrap">Bootstrap</div>
+        <div class="text-badge php">PHP</div>
+      </div>
+    </div>
+    
+    <div class="section-header">
+      <div id="descer_sobre_mim" class="nome">SOBRE MIM</div>
+      <div class="titulo">Samuel Vieira</div>
+    </div>
+
+    <div class="sobre-container">
+      <div class="sobre-imagem">
+        <div id="img_samuel">
+          <img src="imagens/SamuelVieira.jpeg" alt="Samuel Vieira">
+        </div>
+      </div>
+      
+      <div class="sobre-texto">
+        <div id="texto">
+          <p>Sou estudante de <strong>Desenvolvimento de Sistemas</strong> na ETEC, no modelo <strong>AMS (Articulação do Ensino Médio Técnico e Superior)</strong>, um programa realizado em parceria com a FATEC e a IBM, que proporciona uma formação integrada entre ensino técnico, superior e as demandas do mercado de tecnologia. Vou finalizar o curso no segundo semestre de 2026, com foco na criação de experiências digitais modernas, responsivas e bem estruturadas.</p>
+          
+          <p>Possuo conhecimentos em <strong>HTML, CSS, PHP, Bootstrap, Python e React (básico)</strong>, aplicados no desenvolvimento de sites, interfaces web e projetos acadêmicos que seguem boas práticas de organização, usabilidade e desempenho. Ao longo da minha formação, venho desenvolvendo soluções que unem <strong>design funcional e código limpo</strong>, sempre buscando entregar layouts eficientes, interações intuitivas e aplicações consistentes.</p>
+          
+          <p>Além das habilidades técnicas, tenho competências em <strong>trabalho em equipe</strong> e participo ativamente de projetos colaborativos, aplicando princípios de <strong>Design Thinking</strong> para compreender problemas, propor soluções criativas e desenvolver produtos centrados no usuário. Possuo certificações pela <strong>IBM SkillsBuild</strong> em Design Thinking e Metodologias Ágeis, que reforçam minha capacidade de atuar de forma organizada, colaborativa e orientada a resultados.</p>
+          
+          <p>Também possuo certificação em <strong>Introdução ao React JS</strong> e participei de um hackathon promovido pela Venturus, experiência que contribuiu para o desenvolvimento da minha capacidade de <strong>resolução de problemas, tomada de decisão e trabalho sob prazos</strong>, sempre em equipe.</p>
+          
+          <p>Estou em constante evolução, aprofundando meus conhecimentos em <strong>desenvolvimento front-end e lógica de programação</strong>. Para o ano de 2026, busco uma oportunidade de <strong>estágio ou vaga júnior</strong>, com o objetivo de adquirir experiência prática na área de tecnologia, aplicar meus conhecimentos em ambientes reais e continuar meu desenvolvimento profissional.</p>
+        </div>
+        
+        <div id="download_curriculo">
+          <a href="imagens/Samuel_Vieira (1).pdf" download="Samuel_Vieira_Curriculo.pdf">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download Currículo
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="descer_sobre_mim" class="nome">PORTFÓLIO</div>
+    <div class="titulo">Projetos, certificações e habilidades técnicas</div>
+
+    <div id="selecionar_tipo">
+      <div class="tipos ativo" data-target="projetos">Projetos</div>
+      <div class="tipos" data-target="certificados">Certificados</div>
+      <div class="tipos" data-target="tecnologias">Tecnologias</div>
+    </div>
+
+    <div class="conteudos">
+      <div id="lista-projetos" class="conteudo ativo">
+        <div class="projetos-container">
+          
+          <div class="card-projeto">
+            <div class="projeto-imagem-container">
+              <img src="imagens/GeminiClone.png" alt="Clone do Gemini" class="projeto-imagem">
+              <div class="projeto-overlay">
+                <div class="projeto-tecnologias">
+                  <span class="tecnologia-tag">React</span>
+                  <span class="tecnologia-tag">Gemini API</span>
+                  <span class="tecnologia-tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="projeto-conteudo">
+              <div class="projeto-header">
+                <div class="projeto-titulo-container">
+                  <h3 class="projeto-titulo">Clone do Gemini</h3>
+                </div>
+                <div class="projeto-data">2024</div>
+              </div>
+              
+              <div class="projeto-descricao">
+                Desenvolvido em React com API do Gemini para simular inteligência artificial, criando uma interface moderna e responsiva que replica a experiência do Google Gemini.
+              </div>
+              
+              <div class="projeto-acoes">
+                <a href="https://samuel0088.github.io/GeminiClone/" target="_blank" class="btn-projeto btn-site">
+                  <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M15 3h6v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  Ver Site
+                </a>
+                <a href="https://github.com/Samuel0088/GeminiClone" target="_blank" class="btn-projeto btn-github">
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C6.477 2 2 6.477 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21V19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26V21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 6.477 17.523 2 12 2Z" fill="currentColor"/>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+              
+              <div class="projeto-features">
+                <span class="feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.59 7.58L10 14.17L7.41 11.59C6.63 10.81 5.37 10.81 4.59 11.59C3.81 12.37 3.81 13.63 4.59 14.41L9.17 19C9.95 19.78 11.21 19.78 11.99 19L19.41 11.58C20.19 10.8 20.19 9.54 19.41 8.76C18.63 7.98 17.37 7.98 16.59 8.76L16.59 7.58Z" fill="#4CAF50"/>
+                  </svg>
+                  React Hooks
+                </span>
+                <span class="feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.59 7.58L10 14.17L7.41 11.59C6.63 10.81 5.37 10.81 4.59 11.59C3.81 12.37 3.81 13.63 4.59 14.41L9.17 19C9.95 19.78 11.21 19.78 11.99 19L19.41 11.58C20.19 10.8 20.19 9.54 19.41 8.76C18.63 7.98 17.37 7.98 16.59 8.76L16.59 7.58Z" fill="#4CAF50"/>
+                  </svg>
+                  API Integration
+                </span>
+                <span class="feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.59 7.58L10 14.17L7.41 11.59C6.63 10.81 5.37 10.81 4.59 11.59C3.81 12.37 3.81 13.63 4.59 14.41L9.17 19C9.95 19.78 11.21 19.78 11.99 19L19.41 11.58C20.19 10.8 20.19 9.54 19.41 8.76C18.63 7.98 17.37 7.98 16.59 8.76L16.59 7.58Z" fill="#4CAF50"/>
+                  </svg>
+                  Responsive Design
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-projeto">
+            <div class="projeto-imagem-container">
+              <img src="imagens/crud_python.png" alt="CRUD Python com SQLAlchemy" class="projeto-imagem">
+              <div class="projeto-overlay">
+                <div class="projeto-tecnologias">
+                  <span class="tecnologia-tag">Python</span>
+                  <span class="tecnologia-tag">SQLAlchemy</span>
+                  <span class="tecnologia-tag">ORM</span>
+                  <span class="tecnologia-tag">SQLite</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="projeto-conteudo">
+              <div class="projeto-header">
+                <div class="projeto-titulo-container">
+                  <h3 class="projeto-titulo">CRUD com Python e SQLAlchemy</h3>
+                </div>
+                <div class="projeto-data">2024</div>
+              </div>
+              
+              <div class="projeto-descricao">
+                Sistema completo de CRUD (Create, Read, Update, Delete) utilizando SQLAlchemy ORM para mapeamento objeto-relacional, proporcionando uma gestão eficiente e escalável de dados.
+              </div>
+              
+              <div class="projeto-acoes">
+                <a href="https://github.com/Samuel0088/CRUD_Python" target="_blank" class="btn-projeto btn-github">
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C6.477 2 2 6.477 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21V19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26V21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 6.477 17.523 2 12 2Z" fill="currentColor"/>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+              
+              <div class="projeto-features">
+                <span class="feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.59 7.58L10 14.17L7.41 11.59C6.63 10.81 5.37 10.81 4.59 11.59C3.81 12.37 3.81 13.63 4.59 14.41L9.17 19C9.95 19.78 11.21 19.78 11.99 19L19.41 11.58C20.19 10.8 20.19 9.54 19.41 8.76C18.63 7.98 17.37 7.98 16.59 8.76L16.59 7.58Z" fill="#4CAF50"/>
+                  </svg>
+                  SQLAlchemy ORM
+                </span>
+                <span class="feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.59 7.58L10 14.17L7.41 11.59C6.63 10.81 5.37 10.81 4.59 11.59C3.81 12.37 3.81 13.63 4.59 14.41L9.17 19C9.95 19.78 11.21 19.78 11.99 19L19.41 11.58C20.19 10.8 20.19 9.54 19.41 8.76C18.63 7.98 17.37 7.98 16.59 8.76L16.59 7.58Z" fill="#4CAF50"/>
+                  </svg>
+                  Persistência de Dados
+                </span>
+                <span class="feature">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.59 7.58L10 14.17L7.41 11.59C6.63 10.81 5.37 10.81 4.59 11.59C3.81 12.37 3.81 13.63 4.59 14.41L9.17 19C9.95 19.78 11.21 19.78 11.99 19L19.41 11.58C20.19 10.8 20.19 9.54 19.41 8.76C18.63 7.98 17.37 7.98 16.59 8.76L16.59 7.58Z" fill="#4CAF50"/>
+                  </svg>
+                  Arquitetura MVC
+                </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div id="lista-certificados" class="conteudo">
+        <div class="certificados-container">
+          
+          <div class="card-certificado">
+            <div class="certificado-imagem" onclick="abrirLightbox('imagens/GenAI_Dados.webp', 'Bootcamp Bradesco - GenAI & Dados')">
+              <img src="imagens/GenAI_Dados.webp" alt="Bootcamp Bradesco - GenAI & Dados" class="certificado-thumb">
+              <div class="zoom-indicator">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="certificado-badge bradesco">Bradesco</div>
+            </div>
+            
+            <div class="certificado-conteudo">
+              <div class="certificado-header">
+                <h3 class="certificado-titulo">GenAI & Dados</h3>
+              </div>
+              
+              <div class="certificado-descricao">
+                Domine Python para analisar e organizar dados, usando inteligência artificial generativa, SQL, Excel, Power Query e Microsoft Copilot. Aprenda com desafios guiados e atividades mão na massa.
+              </div>
+              
+              <div class="certificado-acoes">
+                <span class="btn-status">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.24 7.76L10.58 13.41L7.75 10.59C7.34 10.18 6.68 10.18 6.27 10.59C5.86 11 5.86 11.66 6.27 12.07L9.7 15.5C10.11 15.91 10.77 15.91 11.18 15.5L17.73 8.93C18.14 8.52 18.14 7.86 17.73 7.45C17.32 7.04 16.66 7.04 16.25 7.45L16.24 7.76Z" fill="#4CAF50"/>
+                  </svg>
+                  Em andamento
+                </span>
+                <span class="certificado-tipo">Bootcamp</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-certificado">
+            <div class="certificado-imagem" onclick="abrirLightbox('imagens/trybe.avif', 'Trybe - Lógica de Programação')">
+              <img src="imagens/trybe.avif" alt="Trybe - Lógica de Programação" class="certificado-thumb">
+              <div class="zoom-indicator">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="certificado-badge trybe">Trybe</div>
+            </div>
+            
+            <div class="certificado-conteudo">
+              <div class="certificado-header">
+                <h3 class="certificado-titulo">Lógica de Programação</h3>
+              </div>
+              
+              <div class="certificado-descricao">
+                Exploração de algoritmos e pensamento computacional, prática de estruturas de seleção e repetição para resolver problemas de forma eficiente.
+              </div>
+              
+              <div class="certificado-acoes">
+                <span class="btn-status">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.24 7.76L10.58 13.41L7.75 10.59C7.34 10.18 6.68 10.18 6.27 10.59C5.86 11 5.86 11.66 6.27 12.07L9.7 15.5C10.11 15.91 10.77 15.91 11.18 15.5L17.73 8.93C18.14 8.52 18.14 7.86 17.73 7.45C17.32 7.04 16.66 7.04 16.25 7.45L16.24 7.76Z" fill="#4CAF50"/>
+                  </svg>
+                  Em andamento
+                </span>
+                <span class="certificado-tipo">Curso</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-certificado">
+            <div class="certificado-imagem" onclick="abrirLightbox('imagens/react_tic_em_trilhas.jpg', 'React - TIC em trilhas')">
+              <img src="imagens/react_tic_em_trilhas.jpg" alt="React - TIC em trilhas" class="certificado-thumb">
+              <div class="zoom-indicator">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="certificado-badge tic">TIC</div>
+            </div>
+            
+            <div class="certificado-conteudo">
+              <div class="certificado-header">
+                <h3 class="certificado-titulo">React - Introdução</h3>
+              </div>
+              
+              <div class="certificado-descricao">
+                Curso introdutório de 30 horas focado em React e Routing, abordando fundamentos da biblioteca, criação de componentes e navegação com React Router.
+              </div>
+              
+              <div class="certificado-acoes">
+                <a href="https://ticemtrilhas.org.br/certificate-validation?code=d3d43f94-d63c-4963-9e1c-4b6008b5e174" target="_blank" class="btn-certificado">
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Ver certificado
+                </a>
+                <span class="certificado-tipo">Certificado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-certificado">
+            <div class="certificado-imagem" onclick="abrirLightbox('imagens/explorations_into_mindfulness.png', 'IBM - Explorations into Mindfulness')">
+              <img src="imagens/explorations_into_mindfulness.png" alt="IBM - Explorations into Mindfulness" class="certificado-thumb">
+              <div class="zoom-indicator">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="certificado-badge ibm">IBM</div>
+            </div>
+            
+            <div class="certificado-conteudo">
+              <div class="certificado-header">
+                <h3 class="certificado-titulo">Explorations into Mindfulness</h3>
+              </div>
+              
+              <div class="certificado-descricao">
+                Conhecimentos sobre conceitos e técnicas de mindfulness, aprendendo a aplicar práticas de atenção plena em diferentes situações.
+              </div>
+              
+              <div class="certificado-acoes">
+                <a href="https://students.yourlearning.ibm.com/credential/CREDLY-dabbc05f-9024-4c51-a2c0-5ccd08645415" target="_blank" class="btn-certificado">
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Ver certificado
+                </a>
+                <span class="certificado-tipo">Badge Digital</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-certificado">
+            <div class="certificado-imagem" onclick="abrirLightbox('imagens/agile_explorer.jpg', 'IBM - Agile Explorer')">
+              <img src="imagens/agile_explorer.jpg" alt="IBM - Agile Explorer" class="certificado-thumb">
+              <div class="zoom-indicator">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="certificado-badge ibm">IBM</div>
+            </div>
+            
+            <div class="certificado-conteudo">
+              <div class="certificado-header">
+                <h3 class="certificado-titulo">Agile Explorer</h3>
+              </div>
+              
+              <div class="certificado-descricao">
+                Compreensão fundamental dos valores, princípios e práticas do Agile para transformar a cultura organizacional e melhorar a colaboração em equipe.
+              </div>
+              
+              <div class="certificado-acoes">
+                <a href="https://students.yourlearning.ibm.com/credential/CREDLY-dc3b5213-b2dd-4760-b45e-c9a95032bda7" target="_blank" class="btn-certificado">
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Ver certificado
+                </a>
+                <span class="certificado-tipo">Badge Digital</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-certificado">
+            <div class="certificado-imagem" onclick="abrirLightbox('imagens/working_in_a_digital_world.jpg', 'IBM - Working in a Digital World: Professional Skills')">
+              <img src="imagens/working_in_a_digital_world.jpg" alt="IBM - Working in a Digital World" class="certificado-thumb">
+              <div class="zoom-indicator">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="certificado-badge ibm">IBM</div>
+            </div>
+            
+            <div class="certificado-conteudo">
+              <div class="certificado-header">
+                <h3 class="certificado-titulo">Working in a Digital World</h3>
+              </div>
+              
+              <div class="certificado-descricao">
+                Desenvolvimento de competências essenciais para o sucesso profissional no mundo digital, incluindo comunicação, colaboração e metodologias ágeis.
+              </div>
+              
+              <div class="certificado-acoes">
+                <a href="https://students.yourlearning.ibm.com/credential/CREDLY-dafd91d2-b4fa-46e2-a1fe-c9b0428d6ea7" target="_blank" class="btn-certificado">
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Ver certificado
+                </a>
+                <span class="certificado-tipo">Badge Digital</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-certificado">
+            <div class="certificado-imagem" onclick="abrirLightbox('imagens/senai_americana_logo.jpg', 'Senai - Fundamentos do Python')">
+              <img src="imagens/senai_americana_logo.jpg" alt="Senai - Fundamentos do Python" class="certificado-thumb">
+              <div class="zoom-indicator">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="certificado-badge senai">SENAI</div>
+            </div>
+            
+            <div class="certificado-conteudo">
+              <div class="certificado-header">
+                <h3 class="certificado-titulo">Fundamentos do Python</h3>
+              </div>
+              
+              <div class="certificado-descricao">
+                Conhecimentos fundamentais em Python, incluindo lógica de programação, estruturas de controle e boas práticas para desenvolvimento de soluções.
+              </div>
+              
+              <div class="certificado-acoes">
+                <a href="https://www.sp.senai.br/consulta-certificado?qrcode=50725102769/15119102" target="_blank" class="btn-certificado">
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Ver certificado
+                </a>
+                <span class="certificado-tipo">Certificado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-certificado">
+            <div class="certificado-imagem" onclick="abrirLightbox('imagens/voxy_ingles.png', 'Voxy - Proficiency Achievement')">
+              <img src="imagens/voxy_ingles.png" alt="Voxy - Proficiency Achievement" class="certificado-thumb">
+              <div class="zoom-indicator">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="certificado-badge voxy">Voxy</div>
+            </div>
+            
+            <div class="certificado-conteudo">
+              <div class="certificado-header">
+                <h3 class="certificado-titulo">Proficiency Achievement</h3>
+              </div>
+              
+              <div class="certificado-descricao">
+                Nível de proficiência em inglês demonstrado através do programa Voxy, com capacidade de compreensão, comunicação e uso efetivo do idioma.
+              </div>
+              
+              <div class="certificado-acoes">
+                <a href="https://app.voxy.com/certificates/proficiency-test/692a1b4f9c2bea8bda929613" target="_blank" class="btn-certificado">
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Ver certificado
+                </a>
+                <span class="certificado-tipo">Certificado</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div id="lista-tecnologias" class="conteudo">
+        <div class="tecnologias-container">
+          
+          <div class="card-tecnologias">
+            <div class="card-tecnologia img_tecnologias">
+              <img src="imagens/html.svg" alt="">
+              <p>HTML</p>
+            </div>
+          </div>
+
+          <div class="card-tecnologias">
+            <div class="card-tecnologia img_tecnologias">
+              <img src="imagens/css.svg" alt="">
+              <p>CSS</p>
+            </div>
+          </div>
+
+          <div class="card-tecnologias">
+            <div class="card-tecnologia img_tecnologias">
+              <img src="imagens/javascript.svg" alt="">
+              <p>JavaScript</p>
+            </div>
+          </div>
+
+          <div class="card-tecnologias">
+            <div class="card-tecnologia img_tecnologias">
+              <img src="imagens/bootstrap.png" alt="">
+              <p>Bootstrap</p>
+            </div>
+          </div>
+
+          <div class="card-tecnologias">
+            <div class="card-tecnologia img_tecnologias">
+              <img src="imagens/php.png" alt="">
+              <p>PHP</p>
+            </div>
+          </div>
+
+          <div class="card-tecnologias">
+            <div class="card-tecnologia img_tecnologias">
+              <img src="imagens/python.png" alt="">
+              <p>Python</p>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+
+    </div>
+
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close" onclick="fecharLightbox()">&times;</span>
+      <img id="lightbox-img" class="lightbox-img" alt="">
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+
+    <div id="descer_sobre_mim" class="nome">CONTATO</div>
+    <div class="titulo">Alguma pergunta? Envie uma mensagem</div>
+
+    <section id="contato">
+      <div class="contact-card">
+
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+          
+          <input type="hidden" name="access_key" value="f282f73f-faa4-4064-8acf-24d40e89adaa">
+
+          <input type="hidden" name="subject" value="Nova Mensagem do seu Portfolio">
+
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <input type="hidden" name="from_name" value="Mensagem via Portfólio">
+
+          <div class="input-group">
+            <span class="icon">👤</span>
+            <input type="text" name="nome" placeholder="Seu nome" required>
+          </div>
+
+          <div class="input-group">
+            <span class="icon">✉️</span>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+          </div>
+
+          <div class="input-group textarea">
+            <span class="icon">💬</span>
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-enviar">
+            ✈️ Enviar mensagem
+          </button>
+        </form>
+
+        <div class="contact-social">
+          <h3>Conecte-se comigo</h3>
+
+          <a href="https://www.linkedin.com/in/samuelvieirafreitas/" target="_blank" class="social-card linkedin">
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </div>
+            <div class="social-text">
+              <div class="social-title">LinkedIn</div>
+              <div class="social-desc">Vamos nos conectar</div>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+
+          <a href="https://instagram.com/s_vieira08" target="_blank" class="social-card instagram">
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </div>
+            <div class="social-text">
+              <div class="social-title">Instagram</div>
+              <div class="social-desc">@s_vieira08</div>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+
+          <a href="https://github.com/Samuel0088" target="_blank" class="social-card github">
+            <div class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </div>
+            <div class="social-text">
+              <div class="social-title">GitHub</div>
+              <div class="social-desc">@Samuel0088</div>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 - Todos os direitos reservados.
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
