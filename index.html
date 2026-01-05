@@ -18,6 +18,7 @@
         <div id="bar2" class="bar"></div>
         <div id="bar3" class="bar"></div>
       </div>
+
       <nav class="nav" id="nav">
         <ul>
           <li><a href="">Home</a></li>
@@ -25,8 +26,18 @@
           <li><a href="#selecionar_tipo">Habilidades</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
-      </nav> 
+      </nav>
     </div>
+
+    <script>
+  function menuOnClick() {
+    document.getElementById("menu-bar").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+  }
+</script>
+
+    <div class="menu-bg" id="menu-bg"></div>
 
     <div id="links">
       <a href="#">Home</a>

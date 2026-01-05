@@ -51,20 +51,20 @@ body {
 
   #menu {
     position: absolute;
-    top: 30px;
+    top: 40px;
     right: 20px;
     z-index: 2;
   }
 
   #menu-bar {
-    width: 40px;
+    width: 45px;
     height: 40px;
     margin: 30px 10px 20px 0;
     cursor: pointer;
   }
 
   .bar {
-    height: 4px;
+    height: 5px;
     width: 100%;
     background-color: var(--cor-fundo-secundaria);
     border-radius: 5px;
@@ -83,6 +83,7 @@ body {
     display: none;
     text-align: right;
     transition: 0.3s ease;
+    z-index: 100;
   }
 
   .nav ul {
@@ -102,23 +103,6 @@ body {
 
   .nav li a:hover {
     font-weight: bold;
-  }
-
-  .menu-bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    margin: 30px 20px 20px 0;
-    background: radial-gradient(
-      circle,
-      var(--cor-fundo-secundaria),
-      var(--cor-fundo-secundaria)
-    );
-    border-radius: 50%;
-    transition: 0.3s ease;
   }
 
   .change {
@@ -141,10 +125,30 @@ body {
     transform: translateY(-6px) rotateZ(45deg);
   }
 
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .menu-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background: var(--cor-fundo-secundaria);
+    border-radius: 50% 0 0 50%;
+    z-index: 1;
+    transition: width 0.4s ease, height 0.4s ease;
+    pointer-events: none;
+  }
+
   .change-bg {
-    width: 520px;
-    height: 460px;
-    transform: translate(60%, -30%);
+    width: 250px; 
+    height: 450px;
+    transform: none; 
+    margin-top: -100px;
+    margin-right: 0px;
   }
 
   .nome {
@@ -325,6 +329,25 @@ body {
   ul {
     display: none !important;
   }
+
+  footer {
+    border-top: solid 1px black;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  #links {
+    display: none;
+  }
+
+  .text-badge {
+    display: none;
+  }
+
+  .hero-image {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 350px) and (max-width: 768px) {
@@ -399,23 +422,6 @@ body {
     font-weight: bold;
   }
 
-  .menu-bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    margin: 30px 20px 20px 0;
-    background: radial-gradient(
-      circle,
-      var(--cor-fundo-secundaria),
-      var(--cor-fundo-secundaria)
-    );
-    border-radius: 50%;
-    transition: 0.3s ease;
-  }
-
   .change {
     display: block;
   }
@@ -436,10 +442,30 @@ body {
     transform: translateY(-6px) rotateZ(45deg);
   }
 
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .menu-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background: var(--cor-fundo-secundaria);
+    border-radius: 50% 0 0 50%;
+    z-index: 1;
+    transition: width 0.4s ease, height 0.4s ease;
+    pointer-events: none;
+  }
+
   .change-bg {
-    width: 520px;
-    height: 460px;
-    transform: translate(60%, -30%);
+    width: 250px; 
+    height: 450px;
+    transform: none; 
+    margin-top: -100px;
+    margin-right: 0px;
   }
 
   .nome {
@@ -537,7 +563,7 @@ body {
     width: 100%;
     border-radius: 15px;
     box-shadow: var(--shadow-soft);
-    border: white 10px solid;
+    border: white 15px solid;
   }
 
   #texto {
