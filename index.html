@@ -666,36 +666,32 @@
 
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
   
-  <input type="hidden" name="access_key" value="f282f73f-faa4-4064-8acf-24d40e89adaa">
+          <input type="hidden" name="access_key" value="f282f73f-faa4-4064-8acf-24d40e89adaa">
 
-  <input type="hidden" name="subject" value="Nova mensagem do portfólio">
-  <input type="hidden" name="from_name" value="Portfólio">
+          <input type="hidden" name="subject" value="Nova mensagem do portfólio">
+          <input type="hidden" name="from_name" value="Portfólio">
 
-  <!-- Redirecionamento após envio -->
-  <input type="hidden" name="redirect" value="https://seusite.com/obrigado.html">
+          <input type="checkbox" name="botcheck" style="display:none;">
 
-  <!-- Anti-spam -->
-  <input type="checkbox" name="botcheck" style="display:none;">
+          <div class="input-group">
+            <span class="icon">👤</span>
+            <input type="text" name="name" placeholder="Seu nome" required>
+          </div>
 
-  <div class="input-group">
-    <span class="icon">👤</span>
-    <input type="text" name="name" placeholder="Seu nome" required>
-  </div>
+          <div class="input-group">
+            <span class="icon">✉️</span>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+          </div>
 
-  <div class="input-group">
-    <span class="icon">✉️</span>
-    <input type="email" name="email" placeholder="Seu e-mail" required>
-  </div>
+          <div class="input-group textarea">
+            <span class="icon">💬</span>
+            <textarea name="message" placeholder="Sua mensagem" required></textarea>
+          </div>
 
-  <div class="input-group textarea">
-    <span class="icon">💬</span>
-    <textarea name="message" placeholder="Sua mensagem" required></textarea>
-  </div>
-
-  <button type="submit" class="btn-enviar">
-    ✈️ Enviar mensagem
-  </button>
-</form>
+          <button type="submit" class="btn-enviar">
+            ✈️ Enviar mensagem
+          </button>
+        </form>
 
         <div class="contact-social">
           <h3>Conecte-se comigo</h3>
