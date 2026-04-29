@@ -1327,7 +1327,7 @@ body {
 
   .projetos-container {
     display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
     gap: 40px !important;
     margin: 0 auto !important;
     width: 100%;
